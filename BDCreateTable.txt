@@ -1,0 +1,16 @@
+CREATE DATABASE `clientes` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE TABLE `clients` (
+  `ID` int(4) NOT NULL AUTO_INCREMENT,
+  `Nome` varchar(35) DEFAULT NULL,
+  `DtNascimento` date DEFAULT NULL,
+  `Sexo` char(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `CEP` char(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `Endereco` char(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `Numero` char(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `Complemento` char(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `Bairro` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `Estado` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `Cidade` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
